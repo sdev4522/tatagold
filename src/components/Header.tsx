@@ -52,14 +52,18 @@ export default function Header({ onOpenQuote }: HeaderProps) {
               className="flex items-center gap-1 hover:text-white transition-colors"
             >
               <Phone className="w-3 h-3 text-brand-orange" />
-              <span className="font-semibold text-white">+91 98765 43210</span>
+              <span className="font-semibold text-gray-800">
+                +91 98765 43210
+              </span>
             </a>
             <a
               href="mailto:info@tatagoldwires.com"
-              className="hidden sm:flex items-center gap-1 hover:text-white transition-colors"
+              className="hidden sm:flex items-center gap-1 hover:text-gray-900 transition-colors"
             >
               <Mail className="w-3 h-3 text-brand-orange" />
-              <span>info@tatagoldwires.com</span>
+              <span className="font-semibold text-gray-800">
+                info@tatagoldwires.com
+              </span>
             </a>
           </div>
         </div>
