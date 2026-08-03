@@ -1,0 +1,50 @@
+/* ==========================================================================
+   TATA GOLD PVC WIRES & CABLES - THEME DESIGN SYSTEM VARIABLES (theme.css)
+   ==========================================================================
+   Edit this file to easily customize all website colors, typography, shadows, 
+   and spacing parameters across the entire application.
+   ========================================================================== */
+
+:root {
+  /* --- BRAND COLOR PALETTE (Extracted from Tata Gold Box Packaging) --- */
+  --color-brand-teal: #006B7B;          /* Primary Deep Cyan / Teal */
+  --color-brand-teal-dark: #004D59;     /* Deep Shadow Teal */
+  --color-brand-teal-light: #E0F2F5;    /* Soft Teal Highlight Background */
+  
+  --color-brand-orange: #FF7A00;        /* Vibrant Safety Orange */
+  --color-brand-orange-hover: #E06B00;  /* Darker Orange for Hover state */
+  
+  --color-brand-gold: #D4AF37;          /* Rich Metallic Gold Accent */
+  --color-brand-gold-light: #FFF8E7;    /* Light Warm Gold Tint */
+  
+  /* --- LIGHT THEME BACKGROUNDS & SURFACES --- */
+  --color-bg-light: #F8FAFC;            /* Main Page Background (Crisp Light) */
+  --color-surface: #FFFFFF;             /* Card & Section Container Background */
+  --color-surface-accent: #F1F5F9;      /* Subtle Neutral Accent Surface */
+  --color-border: #E2E8F0;              /* Soft Border Color */
+  --color-border-hover: #CBD5E1;        /* Focused/Hover Border */
+
+  /* --- TYPOGRAPHY & TEXT COLORS --- */
+  --color-text-main: #0F172A;           /* Deep Slate Charcoal for primary text */
+  --color-text-muted: #475569;          /* Medium Slate for secondary/subtle text */
+  --color-text-light: #64748B;          /* Light Slate for captions */
+  --color-text-white: #FFFFFF;          /* Pure White text */
+
+  /* --- FONTS --- */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Inter', system-ui, sans-serif;
+
+  /* --- SHADOWS & ELEVATION --- */
+  --shadow-card: 0 4px 20px -2px rgba(0, 107, 123, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 12px 32px -4px rgba(0, 107, 123, 0.16), 0 4px 12px -2px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 0 25px rgba(255, 122, 0, 0.3);
+  --shadow-taskbar: 0 -4px 25px rgba(15, 23, 42, 0.12);
+
+  /* --- BORDER RADII --- */
+  --radius-sm: 8px;
+  --radius-card: 16px;
+  --radius-pill: 9999px;
+
+  /* --- MOBILE TASKBAR CONSTANTS --- */
+  --taskbar-height: 64px;
+}
