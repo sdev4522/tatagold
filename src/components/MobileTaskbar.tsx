@@ -16,7 +16,11 @@ export default function MobileTaskbar({ onOpenQuote }: MobileTaskbarProps) {
       <div className="grid grid-cols-4 gap-1 max-w-md mx-auto">
         {/* Direct Call Button */}
         <a
+<<<<<<< HEAD
           href="tel:#"
+=======
+          href="tel:+919876543210"
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
           className="flex flex-col items-center justify-center py-1.5 px-2 rounded-xl text-slate-700 hover:text-brand-teal hover:bg-teal-50/60 active:scale-95 transition-all"
         >
           <div className="w-8 h-8 rounded-full bg-teal-100/80 text-brand-teal flex items-center justify-center mb-1">

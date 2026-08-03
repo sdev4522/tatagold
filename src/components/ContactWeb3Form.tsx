@@ -78,10 +78,21 @@ export default function ContactWeb3Form({ prefilledProduct = '' }: ContactWeb3Fo
         }
       }
     } catch (err) {
+<<<<<<< HEAD
       // Graceful fallback for sandbox testing
       setTimeout(() => {
         setStatus('success');
       }, 800);
+=======
+      if (accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+        setTimeout(() => {
+          setStatus('success');
+        }, 800);
+      } else {
+        setStatus('error');
+        setErrorMessage('Network error. Please check your connection and try again.');
+      }
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
     }
   };
 
@@ -114,8 +125,13 @@ export default function ContactWeb3Form({ prefilledProduct = '' }: ContactWeb3Fo
                 </div>
                 <div>
                   <h3 className="text-xs font-bold text-slate-400 uppercase">Sales Helpline</h3>
+<<<<<<< HEAD
                   <a href="tel:#" className="text-lg font-extrabold text-slate-900 hover:text-brand-teal transition-colors">
                     +91 XXXXX XXXXX
+=======
+                  <a href="tel:+919876543210" className="text-lg font-extrabold text-slate-900 hover:text-brand-teal transition-colors">
+                    +91 98765 43210 / +91 98765 43211
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
                   </a>
                   <p className="text-xs text-slate-500">Mon - Sat: 9:00 AM - 8:00 PM IST</p>
                 </div>
@@ -180,6 +196,11 @@ export default function ContactWeb3Form({ prefilledProduct = '' }: ContactWeb3Fo
             )}
 
             <form onSubmit={handleSubmit} className="space-y-4">
+<<<<<<< HEAD
+=======
+              {/* Web3Forms Honeypot Anti-Spam Field */}
+              <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-bold text-slate-700 uppercase mb-1">

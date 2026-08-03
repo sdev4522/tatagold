@@ -1,7 +1,22 @@
+<<<<<<< HEAD
 'use client';
 
 import React, { useState, useEffect } from 'react';
 import { Phone, Mail, ShieldCheck, Menu, X, ArrowRight, Download } from 'lucide-react';
+=======
+"use client";
+
+import React, { useState, useEffect } from "react";
+import {
+  Phone,
+  Mail,
+  ShieldCheck,
+  Menu,
+  X,
+  ArrowRight,
+  Download,
+} from "lucide-react";
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
 
 interface HeaderProps {
   onOpenQuote: () => void;
@@ -15,14 +30,23 @@ export default function Header({ onOpenQuote }: HeaderProps) {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
+<<<<<<< HEAD
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+=======
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
   }, []);
 
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
       {/* Top Utility Bar */}
+<<<<<<< HEAD
       <div className="bg-brand-teal text-white text-xs py-2 px-4 border-b border-teal-700/50">
+=======
+      <div className="bg-white text-gray-800   text-xs py-2 px-4 border-b border-teal-700/50">
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5 font-medium">
@@ -31,11 +55,19 @@ export default function Header({ onOpenQuote }: HeaderProps) {
             </span>
             <span className="hidden md:inline text-teal-200">|</span>
             <span className="hidden md:inline-flex items-center gap-1 text-teal-100">
+<<<<<<< HEAD
               Tagline: <strong className="text-white">"Making difference in electric"</strong>
+=======
+              Tagline:{" "}
+              <strong className="text-gray-800  font-semibold">
+                "Making difference in electric"
+              </strong>
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
             </span>
           </div>
 
           <div className="flex items-center gap-4 text-teal-100">
+<<<<<<< HEAD
             <a href="tel:#" className="flex items-center gap-1 hover:text-white transition-colors">
               <Phone className="w-3 h-3 text-brand-orange" />
               <span className="font-semibold text-white">+91 XXXXX XXXXX</span>
@@ -43,6 +75,25 @@ export default function Header({ onOpenQuote }: HeaderProps) {
             <a href="mailto:info@tatagoldwires.com" className="hidden sm:flex items-center gap-1 hover:text-white transition-colors">
               <Mail className="w-3 h-3 text-brand-orange" />
               <span>info@tatagoldwires.com</span>
+=======
+            <a
+              href="tel:+919876543210"
+              className="flex items-center gap-1 hover:text-white transition-colors"
+            >
+              <Phone className="w-3 h-3 text-brand-orange" />
+              <span className="font-semibold text-gray-800">
+                +91 98765 43210
+              </span>
+            </a>
+            <a
+              href="mailto:info@tatagoldwires.com"
+              className="hidden sm:flex items-center gap-1 hover:text-gray-900 transition-colors"
+            >
+              <Mail className="w-3 h-3 text-brand-orange" />
+              <span className="font-semibold text-gray-800">
+                info@tatagoldwires.com
+              </span>
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
             </a>
           </div>
         </div>
@@ -52,13 +103,19 @@ export default function Header({ onOpenQuote }: HeaderProps) {
       <div
         className={`w-full transition-all duration-300 ${
           isScrolled
+<<<<<<< HEAD
             ? 'bg-white/95 backdrop-blur-md shadow-md py-3'
             : 'bg-white py-4 border-b border-gray-100'
+=======
+            ? "bg-brand-teal backdrop-blur-md shadow-md py-3"
+            : "bg-brand-teal py-4 border-b border-gray-100"
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo & Brand Name */}
           <a href="#" className="flex items-center gap-3 group">
+<<<<<<< HEAD
             <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-teal to-brand-teal-dark flex items-center justify-center text-brand-gold font-extrabold text-xl shadow-md border-2 border-brand-orange/30 group-hover:scale-105 transition-transform">
               TG
             </div>
@@ -93,6 +150,48 @@ export default function Header({ onOpenQuote }: HeaderProps) {
               Specifications
             </a>
             <a href="#contact" className="hover:text-brand-teal transition-colors py-1">
+=======
+            <img
+              src="/images/tata-gold-logo.png"
+              alt="Tata Gold Wires Logo"
+              className="w-44 h-auto object-contain transition-transform group-hover:scale-105"
+            />
+          </a>
+
+          {/* Desktop Nav Links */}
+          <nav className="hidden lg:flex items-center gap-8 font-medium text-sm text-white">
+            <a
+              href="#about"
+              className="hover:text-brand-teal transition-colors py-1"
+            >
+              About Us
+            </a>
+            <a
+              href="#products"
+              className="hover:text-brand-teal transition-colors py-1"
+            >
+              Products
+            </a>
+            <a
+              href="#calculator"
+              className="hover:text-brand-teal transition-colors py-1 flex items-center gap-1"
+            >
+              <span>Wire Calculator</span>
+              <span className="bg-orange-100 text-brand-orange text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+                New
+              </span>
+            </a>
+            <a
+              href="#specs"
+              className="hover:text-brand-teal transition-colors py-1"
+            >
+              Specifications
+            </a>
+            <a
+              href="#contact"
+              className="hover:text-brand-teal transition-colors py-1"
+            >
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
               Contact Us
             </a>
           </nav>
@@ -114,7 +213,15 @@ export default function Header({ onOpenQuote }: HeaderProps) {
             className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none"
             aria-label="Toggle Navigation Menu"
           >
+<<<<<<< HEAD
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+=======
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
           </button>
         </div>
 

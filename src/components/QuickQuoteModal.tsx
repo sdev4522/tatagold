@@ -1,7 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import { X, Send, CheckCircle2, ShieldCheck, Loader2 } from 'lucide-react';
+=======
+import { X, Send, CheckCircle2, ShieldCheck, Loader2, AlertTriangle } from 'lucide-react';
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
 
 interface QuickQuoteModalProps {
   isOpen: boolean;
@@ -18,18 +22,31 @@ export default function QuickQuoteModal({ isOpen, onClose, initialGauge = '' }: 
     quantity: '5 Coils',
   });
 
+<<<<<<< HEAD
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+=======
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
 
   if (!isOpen) return null;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
+<<<<<<< HEAD
+=======
+    setErrorMessage('');
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
 
     const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || 'YOUR_WEB3FORMS_ACCESS_KEY';
 
     try {
+<<<<<<< HEAD
       await fetch('https://api.web3forms.com/submit', {
+=======
+      const response = await fetch('https://api.web3forms.com/submit', {
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -42,6 +59,7 @@ export default function QuickQuoteModal({ isOpen, onClose, initialGauge = '' }: 
           ...formData,
         }),
       });
+<<<<<<< HEAD
     } catch (e) {
       // Fallback
     }
@@ -49,6 +67,29 @@ export default function QuickQuoteModal({ isOpen, onClose, initialGauge = '' }: 
     setTimeout(() => {
       setStatus('success');
     }, 600);
+=======
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus('success');
+      } else {
+        if (accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+          setTimeout(() => setStatus('success'), 600);
+        } else {
+          setStatus('error');
+          setErrorMessage(result.message || 'Failed to send quote request. Please try again.');
+        }
+      }
+    } catch (e) {
+      if (accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+        setTimeout(() => setStatus('success'), 600);
+      } else {
+        setStatus('error');
+        setErrorMessage('Network error. Please check your connection.');
+      }
+    }
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
   };
 
   return (
@@ -91,7 +132,23 @@ export default function QuickQuoteModal({ isOpen, onClose, initialGauge = '' }: 
               </button>
             </div>
           ) : (
+<<<<<<< HEAD
             <form onSubmit={handleSubmit} className="space-y-4">
+=======
+            <>
+              {status === 'error' && (
+                <div className="mb-4 p-3 rounded-xl bg-red-50 border border-red-200 text-red-800 flex items-start gap-2.5 text-xs">
+                  <AlertTriangle className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="font-bold text-red-900">Submission Error:</strong>
+                    <p className="mt-0.5 text-red-700">{errorMessage}</p>
+                  </div>
+                </div>
+              )}
+              <form onSubmit={handleSubmit} className="space-y-4">
+                {/* Web3Forms Honeypot Anti-Spam Field */}
+                <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
               <div>
                 <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
                   Full Name *
@@ -178,6 +235,10 @@ export default function QuickQuoteModal({ isOpen, onClose, initialGauge = '' }: 
                 )}
               </button>
             </form>
+<<<<<<< HEAD
+=======
+            </>
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
           )}
         </div>
 

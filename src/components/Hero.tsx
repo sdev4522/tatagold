@@ -1,8 +1,24 @@
+<<<<<<< HEAD
 'use client';
 
 import React from 'react';
 import Image from 'next/image';
 import { ShieldCheck, Zap, Flame, Award, CheckCircle2, ArrowRight, Calculator } from 'lucide-react';
+=======
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import {
+  ShieldCheck,
+  Zap,
+  Flame,
+  Award,
+  CheckCircle2,
+  ArrowRight,
+  Calculator,
+} from "lucide-react";
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
 
 interface HeroProps {
   onOpenQuote: () => void;
@@ -18,10 +34,15 @@ export default function Hero({ onOpenQuote }: HeroProps) {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<<<<<<< HEAD
           
           {/* Left Hero Text Column */}
           <div className="lg:col-span-7 space-y-6 text-left">
             
+=======
+          {/* Left Hero Text Column */}
+          <div className="lg:col-span-7 space-y-6 text-left">
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
             {/* Tagline Badge */}
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-orange-50 border border-teal-200/80 px-3.5 py-1.5 rounded-full shadow-sm">
               <span className="w-2 h-2 rounded-full bg-brand-orange animate-ping" />
@@ -36,21 +57,40 @@ export default function Hero({ onOpenQuote }: HeroProps) {
 
             {/* Main Headline */}
             <div className="space-y-2">
+<<<<<<< HEAD
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
+=======
+              <h1 className="text-4xl text-center sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
                 <span className="text-brand-teal">TATA GOLD</span>
                 <br />
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-teal via-slate-800 to-brand-orange">
                   PVC WIRES & CABLES
                 </span>
               </h1>
+<<<<<<< HEAD
               <p className="text-xl sm:text-2xl font-bold text-brand-orange tracking-wide font-heading pt-1">
+=======
+              <p className="text-xl text-center sm:text-2xl font-bold text-brand-orange tracking-wide font-heading pt-1">
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
                 "Making difference in electric"
               </p>
             </div>
 
             {/* Subheading description */}
+<<<<<<< HEAD
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
               Engineered with <strong className="text-slate-900 font-semibold">99.99% Electrolytic Pure Copper</strong> and advanced Flame Retardant PVC insulation. Designed for maximum electrical conductivity, minimal energy loss, and total fire safety for modern homes and commercial infrastructure.
+=======
+            <p className="text-base text-center sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
+              Engineered with{" "}
+              <strong className="text-slate-900 font-semibold">
+                99.99% Electrolytic Pure Copper
+              </strong>{" "}
+              and advanced Flame Retardant PVC insulation. Designed for maximum
+              electrical conductivity, minimal energy loss, and total fire
+              safety for modern homes and commercial infrastructure.
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
             </p>
 
             {/* Feature Highlights Grid */}
@@ -60,8 +100,17 @@ export default function Hero({ onOpenQuote }: HeroProps) {
                   <Zap className="w-4 h-4" />
                 </div>
                 <div>
+<<<<<<< HEAD
                   <p className="text-xs font-bold text-slate-900">99.99% Pure</p>
                   <p className="text-[11px] text-slate-500">Electrolytic Copper</p>
+=======
+                  <p className="text-xs font-bold text-slate-900">
+                    99.99% Pure
+                  </p>
+                  <p className="text-[11px] text-slate-500">
+                    Electrolytic Copper
+                  </p>
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
                 </div>
               </div>
 
@@ -80,7 +129,13 @@ export default function Hero({ onOpenQuote }: HeroProps) {
                   <Award className="w-4 h-4" />
                 </div>
                 <div>
+<<<<<<< HEAD
                   <p className="text-xs font-bold text-slate-900">ISI Certified</p>
+=======
+                  <p className="text-xs font-bold text-slate-900">
+                    ISI Certified
+                  </p>
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
                   <p className="text-[11px] text-slate-500">IS: 694 Standard</p>
                 </div>
               </div>
@@ -120,19 +175,28 @@ export default function Hero({ onOpenQuote }: HeroProps) {
                 Custom Length Spools Available
               </span>
             </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
           </div>
 
           {/* Right Product 3D Pack Box Showcase Column */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
+<<<<<<< HEAD
               
+=======
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
               {/* Decorative Glow backdrop */}
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-teal/20 to-brand-orange/20 rounded-3xl blur-2xl transform -rotate-3 scale-95" />
 
               {/* Box Image Frame */}
               <div className="relative bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-card animate-float">
+<<<<<<< HEAD
                 
+=======
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
                 {/* Top Badge Overlay */}
                 <div className="absolute top-4 left-4 z-10 bg-brand-orange text-white text-xs font-extrabold px-3 py-1.5 rounded-lg shadow-md flex items-center gap-1 uppercase tracking-wider">
                   <ShieldCheck className="w-4 h-4" />
@@ -153,6 +217,7 @@ export default function Hero({ onOpenQuote }: HeroProps) {
                 {/* Bottom Box Feature Bar */}
                 <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
                   <div>
+<<<<<<< HEAD
                     <span className="text-slate-400 block text-[10px] uppercase font-bold">Standard Colors</span>
                     <div className="flex gap-1.5 mt-1">
                       <span className="w-3.5 h-3.5 rounded-full bg-red-600 border border-slate-300" title="Red" />
@@ -160,10 +225,37 @@ export default function Hero({ onOpenQuote }: HeroProps) {
                       <span className="w-3.5 h-3.5 rounded-full bg-black border border-slate-300" title="Black" />
                       <span className="w-3.5 h-3.5 rounded-full bg-yellow-400 border border-slate-300" title="Yellow" />
                       <span className="w-3.5 h-3.5 rounded-full bg-emerald-600 border border-slate-300" title="Green" />
+=======
+                    <span className="text-slate-400 block text-[10px] uppercase font-bold">
+                      Standard Colors
+                    </span>
+                    <div className="flex gap-1.5 mt-1">
+                      <span
+                        className="w-3.5 h-3.5 rounded-full bg-red-600 border border-slate-300"
+                        title="Red"
+                      />
+                      <span
+                        className="w-3.5 h-3.5 rounded-full bg-blue-600 border border-slate-300"
+                        title="Blue"
+                      />
+                      <span
+                        className="w-3.5 h-3.5 rounded-full bg-black border border-slate-300"
+                        title="Black"
+                      />
+                      <span
+                        className="w-3.5 h-3.5 rounded-full bg-yellow-400 border border-slate-300"
+                        title="Yellow"
+                      />
+                      <span
+                        className="w-3.5 h-3.5 rounded-full bg-emerald-600 border border-slate-300"
+                        title="Green"
+                      />
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
                     </div>
                   </div>
 
                   <div className="text-right">
+<<<<<<< HEAD
                     <span className="text-slate-400 block text-[10px] uppercase font-bold">Voltage Grade</span>
                     <span className="font-extrabold text-brand-teal text-sm">1100V AC</span>
                   </div>
@@ -174,6 +266,19 @@ export default function Hero({ onOpenQuote }: HeroProps) {
             </div>
           </div>
 
+=======
+                    <span className="text-slate-400 block text-[10px] uppercase font-bold">
+                      Voltage Grade
+                    </span>
+                    <span className="font-extrabold text-brand-teal text-sm">
+                      1100V AC
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+>>>>>>> fd63ae7636c0f5a2b998c8fd627a05ab6f50c34a
         </div>
       </div>
     </section>
